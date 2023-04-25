@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <h2>天氣預報</h2>
+    <select name="" id="tool">
+        <option value="0">嘉義縣</option>
+        <option value="1">新北市</option>
+        <option value="2">嘉義市</option>
+        <option value="3">新竹縣</option>
+        <option value="4">新竹市</option>
+        <option value="5">臺北市</option>
+        <option value="6">臺南市</option>
+        <option value="7">宜蘭縣</option>
+        <option value="8">苗栗縣</option>
+        <option value="9">雲林縣</option>
+        <option value="10">花蓮縣</option>
+        <option value="11">臺中市</option>
+        <option value="12">臺東縣</option>
+        <option value="13">桃園市</option>
+        <option value="14">南投縣</option>
+        <option value="15">高雄市</option>
+        <option value="16">金門縣</option>
+        <option value="17">屏東縣</option>
+        <option value="18">基隆市</option>
+        <option value="19">澎湖縣</option>
+        <option value="20">彰化縣</option>
+        <option value="21">連江縣</option>
+    </select>
+    <div class="reflectBlock">
+        <div class="reflectBlock_L">
+            <p id="location"></p>
+            <p id="explain"></p>
+            <p id="temperatureMin"></p>
+
+            <p id="rain"></p>
+        </div>
+        <div class="reflectBlock_R">
+
+            <div class="reflectBlock_R-hidden" id="show">
+            <i class="fa-solid fa-cloud" id="cloudIcon"></i>
+            </div>
+            <div class="reflectBlock_R-hidden" id="hidden">
+            <i class="fa-solid fa-cloud-showers-heavy" ></i>
+            </div>
+
+            <div class="reflectBlock_R-hidden" id="hidden2">
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
